@@ -1,4 +1,3 @@
-cat > src/kite_historical_data/tool.py << 'EOF'
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -50,4 +49,4 @@ class KiteHistoricalData(BaseTool):
             return result
         except Exception as e:
             return f"Error fetching historical data: {str(e)}"
-EOF
+
